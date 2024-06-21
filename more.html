@@ -1,0 +1,93 @@
+
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .foreground-images {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 2;
+            width: calc(100% - 40px); /* full width minus the padding */
+        }
+
+        .image-text-pair {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* space between image and text */
+            color: whitesmoke;
+            text-shadow: 2px 2px 4px chocolate;
+            
+        }
+
+        .foreground-image {
+            width: 250px;
+            height: 150px;
+            box-shadow: 0 0 20px 10px white; /* white shadow around the image */
+            text-box {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
+            box-shadow: 0 0 20px 10px white; /* white shadow around the text box */
+            width: calc(100% - 340px); /* full width minus image width and gap */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://www.pixel4k.com/wp-content/uploads/2021/04/interstellar-astronaut-4k_1618130890-1536x864.jpg.webp "class="background-image">
+        <div class="foreground-images">
+            <div class="image-text-pair">
+                <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/10/27/1414422024640/e0a2dde1-964b-4f42-80e3-e3f06a5d8614-2060x1236.jpeg?width=620&dpr=2&s=none" class="foreground-image">
+                <div class="text-box">
+                    <p><b>"We've always defined ourselves by the ability to overcome the impossible. And we count these moments. <br>thing... Maybe it means something more, something we can't yet understand. <br>
+                        Maybe it's some evidence, some artifact of a higher dimension that we can't consciously perceive.<br I'm drawn across the universe to someone I haven't seen in a decade,
+                         who I know is probably dead. Love is the one thing we're capable of perceiving that transcends dimensions of time and space."</b></p>
+                </div>
+            </div>
+            <div class="image-text-pair">
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/split_image_of_mackenzie_foy_jessica_chastain_and_ellen_burstyn_as_murph_in_interstellar.jpg?q=50&fit=crop&w=825&dpr=1.5" class="foreground-image">
+                <div class="text-box">
+                    <p><b>"Time is relative, okay? It can stretch and it can squeeze, but it can't run backwards. Just can't.<br> The only thing that can move across dimensions, like time, is gravity."</b></p>
+                    </div>
+                </div>
+           <!--<div class="image-text-pair"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/10/anne-hathaway-interstellar.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5;"><div class="text-box">
+                <p><b>"Love isn't something we invented. It's observable, powerful. It has to mean something... Maybe it means something more,<br> something we can't yet understand. 
+                    Maybe it's some evidence, some artifact of a higher dimension that we can't consciously perceive. <br>I'm drawn across the universe to someone I haven't seen in a decade, who I know is probably dead.
+                     Love is the one thing we're capable of perceiving that transcends dimensions of time and space."</b></p>
+                     </div>-->
+                     </div>
+            
+            </div>
+        </div>
+    </body>
+    </html>
+    
+
+        
+
+
